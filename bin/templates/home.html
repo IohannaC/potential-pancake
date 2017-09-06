@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+ <title>W3.CSS Template</title>
+ <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+   <body>
+   <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#profissionais" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROFISSIONAIS</a>
+    <a href="#serviços" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVIÇOS</a>
+    <a href="#controller" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTROLLER</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      
+     
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+   
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#profissionais" class="w3-bar-item w3-button w3-padding-large">PROFISSIONAIS</a>
+  <a href="#serviços" class="w3-bar-item w3-button w3-padding-large">SERVIÇOS</a>
+  <a href="#controller" class="w3-bar-item w3-button w3-padding-large">CONTROLLER</a>
+</div>
+  <!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Adm</span> Controller.</h1>
+    <p>Serviços de Estetica.</p>
+  
+  </header>  
+  
+  
+  <!-- home -->
+  <div class="w3-container w3-content w3-center w3-padding-64"  id="profissionais">
+    <h2 class="w3-wide">PROFISSIONAIS</h2>
+    <p class="w3-opacity"><i>SUB</i></p>
+
+<div class="w3-quarter">
+  <h3>NOME</h3>
+  <p>Maquiadora</p>
+</div>
+
+<div class="w3-quarter">
+  <h3>NOME</h3>
+  <p>Cabeleleiro</p>
+</div>
+
+<div class="w3-quarter">
+  <h3>NOME</h3>
+  <p>Depiladora</p>
+</div>
+
+<div class="w3-quarter">
+  <h3>NOME</h3>
+  <p>Manicure</p>
+</div>
+
+<div class="w3-quarter">
+  <h3>NOME</h3>
+  <p>Pedicure</p>
+</div>
+
+<div class="w3-quarter">
+  <h3>NOME</h3>
+  <p>Cabeleleira</p>
+</div>
+
+<div class="w3-quarter">
+  <h3>NOME</h3>
+  <p>Manicure</p>
+</div>
+
+<div class="w3-quarter">
+  <h3>NOME</h3>
+  <p>Depiladora</p>
+</div>
+    </div>
+  
+   <!--  The ServiceSection  -->
+  <div class="w3-black" id="photos">
+    <div class="w3-black w3-container w3-content w3-padding-64" id="serviços">
+      <h2 class="w3-wide w3-center">SERVIÇOS</h2>
+      
+
+
+<div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-gray w3-xlarge w3-padding-32">Corte</li>
+    <li class="w3-padding-16"><b>#001</b> Código</li>
+    <li class="w3-padding-16"><b>45</b> Minutos</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$102/R$70</h2>
+      <span class="w3-opacity"> Feminino / Masculino</span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+      <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+
+<div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-black w3-xlarge w3-padding-32">Maquiagem</li>
+    <li class="w3-padding-16"><b>#005</b> Código</li>
+    <li class="w3-padding-16"><b>40</b> Minutos</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$ 70</h2>
+      <span class="w3-opacity">Sem Cilios</span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+     <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-gray w3-xlarge w3-padding-32">Mechas</li>
+    <li class="w3-padding-16"><b>#006</b> Código</li>
+    <li class="w3-padding-16"><b>1</b> Hora</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$ 85</h2>
+      <span class="w3-opacity">Com lavado</span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+     <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-gray w3-xlarge w3-padding-32">Escova </li>
+    <li class="w3-padding-16"><b>#002</b> Código</li>
+    <li class="w3-padding-16"><b>30</b> Minutos</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$ 50</h2>
+      <span class="w3-opacity">Com Lavado</span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+      <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-black w3-xlarge w3-padding-32">Hidratação</li>
+    <li class="w3-padding-16"><b>#003</b> Código</li>
+    <li class="w3-padding-16"><b>25</b> Minutos</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$ 30</h2>
+      <span class="w3-opacity">Sem secado</span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+      <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-gray w3-xlarge w3-padding-32">Depilação</li>
+    <li class="w3-padding-16"><b>#004</b> Código</li>
+    <li class="w3-padding-16"><b>1</b> Hora</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$ 100</h2>
+      <span class="w3-opacity">Completa</span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+    <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+
+<div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-black w3-xlarge w3-padding-32">Pés</li>
+    <li class="w3-padding-16"><b>#007</b> Código</li>
+    <li class="w3-padding-16"><b>30</b> Minutos</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$ 29</h2>
+      <span class="w3-opacity"></span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+      <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-gray w3-xlarge w3-padding-32">Lavado </li>
+    <li class="w3-padding-16"><b>#008</b> Código</li>
+    <li class="w3-padding-16"><b>15</b> Minutos</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$ 10</h2>
+      <span class="w3-opacity"></span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+     <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+<div class="w3-third w3-margin-bottom">
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-black w3-xlarge w3-padding-32">Mão</li>
+    <li class="w3-padding-16"><b>#009</b> Código</li>
+    <li class="w3-padding-16"><b>30</b> Minutos</li>
+    <li class="w3-padding-16">
+      <h2 class="w3-wide">R$ 27</h2>
+      <span class="w3-opacity"></span>
+    </li>
+    <li class="w3-light-grey w3-padding-24">
+     <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Editar</button>
+    </li>
+  </ul>
+</div>
+
+
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            
+     
+    </div>
+  </div>
+    </div>  
+
+     <!--The Controller Section -->
+  <div class="w3-container w3-content w3-padding-64"  id="controller">
+    <h2 class="w3-wide w3-center">CONTROLLER</h2>
+	<div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-large">8</span>
+        Profissionais
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-large">9</span>
+        Serviços Cadastrados
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-large">50</span>
+        Clientes
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-large">R$</span>
+        Financeiro
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      <button class="w3-button w3-black w3- w3-padding-large w3-section w3-center">
+      Atualizar Números
+    </button>
+    
+    
+    <div class="w3-row-padding" style="margin:0 -16px">
+  
+     
+  		<a href="#about" class=" w3-button w3-padding-large w3-hover-gray w3-black w3-text-white w3-padding-large w3-section">
+    	<p>Adicionar Serviço</p>
+  		</a>
+  	 </div>
+     
+
+      
+   
+  		<a href="#about" class=" w3-button w3-padding-large w3-hover-gray w3-black w3-text-white w3-padding-large w3-section">
+    	<p>Excluir Serviço</p>
+ 		 </a>
+
+      
+      
+        
+      
+      
+      
+
+   </div>
+	</div>
+  
+<!-- End Page Content -->
+</div>
+    
+       
+    </body>
+</html>
