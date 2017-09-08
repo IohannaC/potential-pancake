@@ -3,104 +3,152 @@
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <title>nomeEstetica</title>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Raleway" />
 <style>
-body,h1,h5 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
+body, h1, h5 {
+	font-family: "Raleway", sans-serif
+}
+
+body, html {
+	height: 100%
+}
+
 .bgimg {
-    background-image: url('https://ae01.alicdn.com/kf/HTB1K8stRVXXXXaEapXXq6xXFXXXN/Preto-e-branco-menina-fasion-fotografia-de-retrato-make-up-JZK904-sala-home-da-parede-arte.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
+	background-image:
+		url('https://ae01.alicdn.com/kf/HTB1K8stRVXXXXaEapXXq6xXFXXXN/Preto-e-branco-menina-fasion-fotografia-de-retrato-make-up-JZK904-sala-home-da-parede-arte.jpg');
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
 }
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-middle w3-jumbo">
-    <p>NomeSalão</p>
-  </div>
-  <div class="w3-display-topleft w3-container w3-xlarge">
-    <p><button onclick="document.getElementById('serviços').style.display='block'" class="w3-button w3-black">Serviços</button></p>
-    <p><button onclick="document.getElementById('login').style.display='block'" class="w3-button w3-black">Login Controller</button></p>
-  </div>
-  <div class="w3-display-bottomleft w3-container w3-text-black">
-    <p class="w3-xlarge">Segunda - Sexta 8h-20h | Sábados 9h-21h</p>
-    <p class="w3-large">Endereço</p>
-    
-  </div>
-</div>
+	<div class="bgimg w3-display-container w3-text-white">
+		<div class="w3-display-middle w3-jumbo">
+			<p>NomeSalão</p>
+		</div>
+		<div class="w3-display-topleft w3-container w3-xlarge">
+			<p>
+				<button
+					onclick="document.getElementById('serviços').style.display='block'"
+					class="w3-button w3-black">Serviços</button>
+			</p>
+			<p>
+				<button
+					onclick="document.getElementById('login').style.display='block'"
+					class="w3-button w3-black">Login Controller</button>
+			</p>
+		</div>
+		<div class="w3-display-bottomleft w3-container w3-text-black">
+			<p class="w3-xlarge">Segunda - Sexta 8h-20h | Sábados 9h-21h</p>
+			<p class="w3-large">Endereço</p>
 
-<!-- Menu Modal -->
-<div id="serviços" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
-      <span onclick="document.getElementById('serviços').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Cabelos</h1>
-    </div>
-    <div class="w3-container">
-      <h5>Corte Feminino <b>R$ 102</b></h5>
-      <h5>Corte Masculino <b>R$ 70</b></h5>
-      <h5>Mechas <b>R$ 85</b></h5>
-      <h5>Hidratação <b>R$ 30</b></h5>
-      <h5>Lavabo <b>R$ 10</b></h5>
-      <h5>Escova <b>R$ 50</b></h5>
-    </div>
-    <div class="w3-container w3-black">
-      <h1>Outros</h1>
-    </div>
-    <div class="w3-container">
-      <h5>Mãos <b>R$ 27</b></h5>
-      <h5>Pés <b>R$ 29</b></h5>
-      <h5>Depilação <b>R$ 100</b></h5>
-     
-    </div>
-  </div>
-</div>
-
-<!-- Login -->
-<div id="login" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
-      <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>LOGIN ADM</h1>
-    </div>
-    <div class="w3-container">
-       <form class="w3-container w3-center" th:action="@{/login}" method="post"> 
-	
-	<div class="w3-section w3-center">
-	<label> Nome : <input class="w3-input w3-border w3-margin-bottom" type="text" name="username" /> </label>
+		</div>
 	</div>
-	
 
-<div>
-<label> Senha : <input class="w3-input" type="password" name="password"/> </label>
-</div>
+	<!-- Menu Modal -->
+	<div id="serviços" class="w3-modal">
+		<div class="w3-modal-content w3-animate-zoom">
+			<div class="w3-container w3-black w3-display-container">
+				<span
+					onclick="document.getElementById('serviços').style.display='none'"
+					class="w3-button w3-display-topright w3-large">x</span>
+				<h1>Cabelos</h1>
+			</div>
+			<div class="w3-container">
+				<h5>
+					Corte Feminino <b>R$ 102</b>
+				</h5>
+				<h5>
+					Corte Masculino <b>R$ 70</b>
+				</h5>
+				<h5>
+					Mechas <b>R$ 85</b>
+				</h5>
+				<h5>
+					Hidratação <b>R$ 30</b>
+				</h5>
+				<h5>
+					Lavabo <b>R$ 10</b>
+				</h5>
+				<h5>
+					Escova <b>R$ 50</b>
+				</h5>
+			</div>
+			<div class="w3-container w3-black">
+				<h1>Outros</h1>
+			</div>
+			<div class="w3-container">
+				<h5>
+					Mãos <b>R$ 27</b>
+				</h5>
+				<h5>
+					Pés <b>R$ 29</b>
+				</h5>
+				<h5>
+					Depilação <b>R$ 100</b>
+				</h5>
 
-	
+			</div>
+		</div>
+	</div>
 
-<p>
-<input id="milk" class="w3-check" type="checkbox" checked="checked"/>
-<label>Lembrar de mim</label></p>
+	<!-- Login -->
+	<div id="login" class="w3-modal">
+		<div class="w3-modal-content w3-animate-zoom">
+			<div class="w3-container w3-black">
+				<span
+					onclick="document.getElementById('login').style.display='none'"
+					class="w3-button w3-display-topright w3-large">x</span>
+				<h1>LOGIN ADM</h1>
+			</div>
+			<div class="w3-container">
+				<form class="w3-container w3-center" th:action="@{/login}"
+					method="post">
 
-<p>
-<button class="w3-button w3-section w3-black w3-ripple"> Login </button></p>
-	
-        </form>
-      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-       
-      </div>
+					<div class="w3-section w3-center">
+						<label> Nome : <input
+							class="w3-input w3-border w3-margin-bottom" type="text"
+							name="username" />
+						</label>
+					</div>
 
-    </div>
-  </div>
-</div>
-            
+
+					<div>
+						<label> Senha : <input class="w3-input" type="password"
+							name="password" />
+						</label>
+					</div>
+
+
+
+					<p>
+						<input id="milk" class="w3-check" type="checkbox"
+							checked="checked" /> <label>Lembrar de mim</label>
+					</p>
+
+					<p>
+						<button class="w3-button w3-section w3-black w3-ripple">
+							Login</button>
+					</p>
+
+				</form>
+				<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
 
 </body>
 </html>
 
 
-<!-- iohanna campos -->"
+<!-- iohanna campos -->
+"
